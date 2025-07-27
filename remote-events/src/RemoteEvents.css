@@ -68,17 +68,6 @@
   line-height: 1.6;
 }
 
-.remote-counter {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #8b5a7c;
-  text-align: center;
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 8px;
-  border: 2px solid rgba(139, 90, 124, 0.2);
-}
-
 .event-indicator {
   display: inline-block;
   width: 8px;

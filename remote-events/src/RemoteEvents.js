@@ -18,7 +18,7 @@ function RemoteEvents() {
     <div className="remote-component">
       <div className="remote-title">Remote Events Component</div>
 
-      <div className="remote-counter">{eventCount}</div>
+      <div className="remote-counter dark-pink">{eventCount}</div>
 
       <div className="remote-content">
         Нажато: {eventCount} раз из host или другого микрофронтенда

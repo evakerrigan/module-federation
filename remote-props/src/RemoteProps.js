@@ -6,7 +6,7 @@ function RemoteProps({ count }) {
     <div className="remote-component">
       <div className="remote-title">Remote Props Component</div>
 
-      <div className="remote-counter">{count}</div>
+      <div className="remote-counter dark-green">{count}</div>
 
       <div className="remote-content">
         Нажато {count} раз из host

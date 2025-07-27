@@ -68,17 +68,6 @@
   line-height: 1.6;
 }
 
-.remote-counter {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #4a6fa5;
-  text-align: center;
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 8px;
-  border: 2px solid rgba(74, 111, 165, 0.2);
-}
-
 .mobx-indicator {
   display: inline-block;
   width: 8px;

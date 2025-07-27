@@ -109,6 +109,16 @@ body {
   background: linear-gradient(135deg, #a8c4e0 0%, #95b1cd 100%);
 }
 
+.remote-counter {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
 /* Remote components styling */
 .host-container h3 {
   font-size: 1.3rem;
@@ -177,5 +187,4 @@ html {
 /* Focus states for accessibility */
 .button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
 }

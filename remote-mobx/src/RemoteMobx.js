@@ -9,7 +9,7 @@ const RemoteMobx = observer(() => {
     <div className="remote-component">
       <div className="remote-title">Remote MobX Component</div>
 
-      <div className="remote-counter">{counter}</div>
+      <div className="remote-counter dark-blue">{counter}</div>
 
       <div className="remote-content">
         Нажато: {counter} раз из host или другого микрофронтенда
