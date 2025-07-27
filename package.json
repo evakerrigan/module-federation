@@ -1,0 +1,36 @@
+{
+  "name": "module-federation-workspace",
+  "version": "1.0.0",
+  "description": "Module Federation проект с host и remote приложениями",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm run install:host && npm run install:remote-props && npm run install:remote-events && npm run install:remote-mobx",
+    "install:host": "cd host && npm install",
+    "install:remote-props": "cd remote-props && npm install",
+    "install:remote-events": "cd remote-events && npm install",
+    "install:remote-mobx": "cd remote-mobx && npm install",
+    "start": "concurrently --kill-others --names \"HOST,PROPS,EVENTS,MOBX\" --prefix-colors \"bgBlue.bold,bgGreen.bold,bgYellow.bold,bgMagenta.bold\" \"npm run start:host\" \"npm run start:remote-props\" \"npm run start:remote-events\" \"npm run start:remote-mobx\"",
+    "start:host": "cd host && npm start",
+    "start:remote-props": "cd remote-props && npm start",
+    "start:remote-events": "cd remote-events && npm start",
+    "start:remote-mobx": "cd remote-mobx && npm start",
+    "build": "npm run build:host && npm run build:remote-props && npm run build:remote-events && npm run build:remote-mobx",
+    "build:host": "cd host && npm run build",
+    "build:remote-props": "cd remote-props && npm run build",
+    "build:remote-events": "cd remote-events && npm run build",
+    "build:remote-mobx": "cd remote-mobx && npm run build",
+    "dev": "npm run start",
+    "postinstall": "npm run install:all"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "module-federation",
+    "react",
+    "webpack",
+    "microfrontend"
+  ],
+  "author": "",
+  "license": "ISC"
+}

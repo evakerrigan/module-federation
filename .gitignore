@@ -1,0 +1,11 @@
+node_modules/
+
+host/node_modules/
+remote-props/node_modules/
+remote-events/node_modules/
+remote-mobx/node_modules/
+
+host/package-lock.json
+remote-props/package-lock.json
+remote-events/package-lock.json
+remote-mobx/package-lock.json

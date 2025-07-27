@@ -1,0 +1,46 @@
+.host-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 20px;
+  width: 30%;
+}
+
+.green {
+  background-color: #00ff00;
+}
+.dark-green {
+  background-color: #008080;
+}
+
+.pink {
+  background-color: #ffc0cb;
+}
+.dark-pink {
+  background-color: #ff6b6b;
+}
+
+.blue {
+  background-color: #00ffff;
+}
+.dark-blue {
+  background-color: #007bff;
+}
