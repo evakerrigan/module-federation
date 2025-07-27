@@ -109,6 +109,18 @@ body {
   background: linear-gradient(135deg, #a8c4e0 0%, #95b1cd 100%);
 }
 
+.remote-counter.dark-green:hover {
+  background: #b7c9d5;
+}
+
+.remote-counter.dark-pink:hover {
+  background: #e8d5d9;
+}
+
+.remote-counter.dark-blue:hover {
+  background: #8eb1cf;
+}
+
 .remote-counter {
   font-size: 2rem;
   font-weight: 700;
@@ -126,15 +138,6 @@ body {
   color: #4a5568;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-}
-
-.green {
-}
-
-.pink {
-}
-
-.blue {
 }
 
 /* Loading state */
