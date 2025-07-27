@@ -1,46 +1,181 @@
+/* Ant Design inspired styles with muted colors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
 .host-container {
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.host-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.host-container ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.host-container li {
+  border-radius: 12px;
+  padding: 1.5rem;
 }
 
 .button {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
 }
 
-li {
-  padding: 20px;
-  width: 30%;
+.button:hover::before {
+  left: 100%;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+/* Muted color scheme */
+.dark-green {
+  background: #b7c9d5;
+}
+
+.dark-green:hover {
+  background: linear-gradient(135deg, #9db3c1 0%, #8ba0ae 100%);
+}
+
+.dark-pink {
+  background: #e8d5d9;
+}
+
+.dark-pink:hover {
+  background: linear-gradient(135deg, #d4c1c5 0%, #c0adb1 100%);
+}
+
+.dark-blue {
+  background: #8eb1cf;
+}
+
+.dark-blue:hover {
+  background: linear-gradient(135deg, #a8c4e0 0%, #95b1cd 100%);
+}
+
+/* Remote components styling */
+.host-container h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .green {
-  background-color: #00ff00;
-}
-.dark-green {
-  background-color: #008080;
 }
 
 .pink {
-  background-color: #ffc0cb;
-}
-.dark-pink {
-  background-color: #ff6b6b;
 }
 
 .blue {
-  background-color: #00ffff;
 }
-.dark-blue {
-  background-color: #007bff;
+
+/* Loading state */
+.host-container div[style*="Загружаем"] {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #718096;
+  font-weight: 500;
+  border: 2px dashed #cbd5e0;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .host-container {
+    padding: 20px 15px;
+  }
+
+  .host-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .host-container ul {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .host-container li {
+    padding: 1rem;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus states for accessibility */
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
 }

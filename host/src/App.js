@@ -56,7 +56,7 @@ function App() {
             onClick={() => setCountProps(countProps + 1)}
             className="button dark-green"
           >
-            Пропсы. Нажато: {countProps} раз
+            Пропсы. <br />Нажато: {countProps} раз
           </button>
         </li>
         <li>
@@ -64,7 +64,7 @@ function App() {
             onClick={() => handleSendCountEvents()}
             className="button dark-pink"
           >
-            Событийная модель.Нажато: {countEvents} раз
+            Событийная модель.<br />Нажато: {countEvents} раз
           </button>
         </li>
         <li>
@@ -72,7 +72,7 @@ function App() {
             onClick={() => handleSendCountMobx()}
             className="button dark-blue"
           >
-            Mobx.Нажато: {countMobx} раз
+            Mobx.<br />Нажато: {countMobx} раз
           </button>
         </li>
       </ul>

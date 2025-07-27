@@ -1,22 +1,15 @@
 import React from "react";
+import "./RemoteProps.css";
 
 function RemoteProps({ count }) {
   return (
-    <div>
-      <div
-        style={{
-          marginTop: "10px",
-          padding: "15px",
-          backgroundColor: count !== undefined ? "#008080" : "#dc3545",
-          borderRadius: "4px",
-          fontSize: "16px",
-          color: "white",
-          borderRadius: "8px",
-        }}
-      >
-        {count !== undefined
-          ? `Получен count от Host: ${count}`
-          : "Работает в изоляции (без данных от Host)"}
+    <div className="remote-component">
+      <div className="remote-title">Remote Props Component</div>
+
+      <div className="remote-counter">{count}</div>
+
+      <div className="remote-content">
+        Нажато {count} раз из host
       </div>
     </div>
   );
